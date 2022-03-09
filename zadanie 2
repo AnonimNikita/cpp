@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void Wieze_Hanoi(int n, char a, char b, char c)
+{
+    if(n>0)
+    {
+        Wieze_Hanoi(n-1,a,c,b);
+        cout<<a<<"na"<<b<<endl;
+        Wieze_Hanoi(n-1,c,b,a);
+    }
+}
+
+int main(){
+
+    Wieze_Hanoi(3,'A','B','C');
+}
